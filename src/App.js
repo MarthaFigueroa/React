@@ -1,4 +1,6 @@
 import './App.css';
+import './public/css/appStyles.css'
+import { Component } from 'react';
 // import Greet from './Components/Greet.js'
 // import Welcome from './Components/Welcome.js'
 // import Message from './Components/Message.js'
@@ -12,10 +14,12 @@ import './App.css';
 // import FragmentDemo from './Components/Fragments/FragmentDemo.js'
 // import ParentComp from './Components/PureComponents/ParentComp'
 // import styles from './public/css/appStyles.module.css'
-import './public/css/appStyles.css'
 // import Hello from './Components/Hello.js'
-import { Component } from 'react';
-import RefsDemo from './Components/Refs/RefsDemo';
+// import FocusInput from './Components/Refs/FocusInput';
+// import RefsDemo from './Components/Refs/RefsDemo';
+// import FRInput from './Components/Refs/FRInput';
+// import FRParentInput from './Components/Refs/FRParentInput';
+import PortalDemo from './Components/Portals/PortalDemo';
 
 class App extends Component {
   render(){
@@ -49,7 +53,12 @@ class App extends Component {
         {/* <Form />
         <FragmentDemo /> */}
         {/* <ParentComp /> */}
-        <RefsDemo />
+        {/* <RefsDemo />
+        <FocusInput />
+        <FRInput />
+        <FRParentInput /> */}
+
+        <PortalDemo />
         {/* <Hello /> */}
       </div>
     );

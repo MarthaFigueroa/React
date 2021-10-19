@@ -7,7 +7,7 @@ export class RefsDemo extends Component {
         this.inputRef = React.createRef();
         this.cbRef = null;
         this.setCbRef = (element) => {
-            this.cbRef = element
+            this.cbRef = element //Callback Refs
         }
     }
 
