@@ -8,11 +8,14 @@ import './App.css';
 // import NameList from './Components/NameList.js'
 // import Stylesheet from './Components/Styling/Stylesheet.js'
 // import Inline from './Components/Styling/Inline.js'
-import Form from './Components/Form-Handling/Form'
+// import Form from './Components/Form-Handling/Form'
+// import FragmentDemo from './Components/Fragments/FragmentDemo.js'
+// import ParentComp from './Components/PureComponents/ParentComp'
 // import styles from './public/css/appStyles.module.css'
 import './public/css/appStyles.css'
 // import Hello from './Components/Hello.js'
 import { Component } from 'react';
+import RefsDemo from './Components/Refs/RefsDemo';
 
 class App extends Component {
   render(){
@@ -43,7 +46,10 @@ class App extends Component {
         <h1 className={styles.success}>success</h1>
         <Inline />     */}
 
-        <Form />
+        {/* <Form />
+        <FragmentDemo /> */}
+        {/* <ParentComp /> */}
+        <RefsDemo />
         {/* <Hello /> */}
       </div>
     );
