@@ -23,6 +23,7 @@ import { Component } from 'react';
 // import Hero from './Components/Error-Boundary/Hero';
 // import ErrorBoundary from './Components/Error-Boundary/ErrorBoundary';
 import ClickCounter from './Components/Higher-Order-Components/ClickCounter';
+import HoverCounter from './Components/Higher-Order-Components/HoverCounter';
 
 class App extends Component {
 
@@ -103,7 +104,8 @@ class App extends Component {
         </>
 
 
-          <ClickCounter />
+          <ClickCounter name="Martha"/>
+          <HoverCounter />
       </div>
     );
   }
