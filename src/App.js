@@ -20,71 +20,90 @@ import { Component } from 'react';
 // import FRInput from './Components/Refs/FRInput';
 // import FRParentInput from './Components/Refs/FRParentInput';
 // import PortalDemo from './Components/Portals/PortalDemo';
-import Modal from './Components/Modals/Modal';
+// import Hero from './Components/Error-Boundary/Hero';
+// import ErrorBoundary from './Components/Error-Boundary/ErrorBoundary';
+import ClickCounter from './Components/Higher-Order-Components/ClickCounter';
 
 class App extends Component {
 
-  state = {showModal: false}
-  handleShowMessageClick = () => this.setState({showModal: true})
-  handleCloseModal = () => this.setState({showModal: false})
+  // state = {showModal: false}
+  // handleShowMessageClick = () => this.setState({showModal: true})
+  // handleCloseModal = () => this.setState({showModal: false})
 
   render(){
     return (
-      <div className="App" style={{height: '100%', display: 'grid', justifyContent: 'center', alignItems: 'center',}}>
-        <div style={{ maxWidth: 400, position: 'relative'}}
-        >
-          <h1>My App</h1>
-          <p>
-            This is an example of how you might use React.createPortal. I think
-            it is a pretty neat API that is yet another awesome escape hatch
-            that React provides for practical reasons. Sometimes you just need
-            to render something completely outside the React Tree.
-          </p>
-          <button onClick={this.handleShowMessageClick}>
-            Show Secret Modal
-          </button>
-          {this.state.showModal ? (
-            <Modal onClose={this.handleCloseModal}>
-              This is the secret modal message!
-            </Modal>
-          ) : null}
-        </div>
+      <div className="App">
 
-        {/* <Greet name="Bruce" heroName="Batman">
-          <p>This is children props!</p>
-        </Greet>
-        <Greet name="Diana" heroName="Wonderwoman">
-          <button>Action</button>
-        </Greet>
-        <Greet name="Almendra" heroName="Catwoman"/>
-        
-        
-        <Welcome name="Bruce" heroName="Batman"/>
-        <Welcome name="Diana" heroName="Wonderwoman"/>
-        <Welcome name="Almendra" heroName="Catwoman"/> */}
+        <>
 
-        {/* <Message />
-        <Counter /> */}
+          {/* <div style={{ maxWidth: 400, position: 'relative'}}
+          >
+            <h1>My App</h1>
+            <p>
+              This is an example of how you might use React.createPortal. I think
+              it is a pretty neat API that is yet another awesome escape hatch
+              that React provides for practical reasons. Sometimes you just need
+              to render something completely outside the React Tree.
+            </p>
+            <button onClick={this.handleShowMessageClick}>
+              Show Secret Modal
+            </button>
+            {this.state.showModal ? (
+              <Modal onClose={this.handleCloseModal}>
+                This is the secret modal message!
+              </Modal>
+            ) : null}
+          </div> */}
 
-        {/* <ParentComponent />
-        <UserGreeting /> */}
-        {/* <NameList /> */}
+          {/* <Hello /> */}
+          {/* <Greet name="Bruce" heroName="Batman">
+            <p>This is children props!</p>
+          </Greet>
+          <Greet name="Diana" heroName="Wonderwoman">
+            <button>Action</button>
+          </Greet>
+          <Greet name="Almendra" heroName="Catwoman"/>
+          
+          
+          <Welcome name="Bruce" heroName="Batman"/>
+          <Welcome name="Diana" heroName="Wonderwoman"/>
+          <Welcome name="Almendra" heroName="Catwoman"/> */}
 
-        {/* <Stylesheet primary={false}/>    */}
-        {/* <h1 className='error'>Error</h1>
-        <h1 className={styles.success}>success</h1>
-        <Inline />     */}
+          {/* <Message />
+          <Counter /> */}
 
-        {/* <Form />
-        <FragmentDemo /> */}
-        {/* <ParentComp /> */}
-        {/* <RefsDemo />
-        <FocusInput />
-        <FRInput />
-        <FRParentInput /> */}
+          {/* <ParentComponent />
+          <UserGreeting /> */}
+          {/* <NameList /> */}
 
-        {/* <PortalDemo /> */}
-        {/* <Hello /> */}
+          {/* <Stylesheet primary={false}/>    */}
+          {/* <h1 className='error'>Error</h1>
+          <h1 className={styles.success}>success</h1>
+          <Inline />     */}
+
+          {/* <Form />
+          <FragmentDemo /> */}
+          {/* <ParentComp /> */}
+          {/* <RefsDemo />
+          <FocusInput />
+          <FRInput />
+          <FRParentInput /> */}
+
+          {/* <PortalDemo /> */}
+          
+          {/* <ErrorBoundary>
+            <Hero heroName="Batman" />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Hero heroName="Superman" />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Hero heroName="Joker" />
+          </ErrorBoundary> */}
+        </>
+
+
+          <ClickCounter />
       </div>
     );
   }
