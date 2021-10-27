@@ -24,6 +24,12 @@ import { Component } from 'react';
 // import ErrorBoundary from './Components/Error-Boundary/ErrorBoundary';
 import ClickCounter from './Components/Higher-Order-Components/ClickCounter';
 import HoverCounter from './Components/Higher-Order-Components/HoverCounter';
+// import ClickCounterTwo from './Components/Render-Props/ClickCounterTwo';
+// import HoverCounterTwo from './Components/Render-Props/HoverCounterTwo';
+// import User from './Components/Render-Props/User';
+import Counter from './Components/Render-Props/Counter';
+import HoverCounterTwo from './Components/Render-Props/HoverCounterTwo';
+import ClickCounterTwo from './Components/Render-Props/ClickCounterTwo';
 
 class App extends Component {
 
@@ -101,11 +107,26 @@ class App extends Component {
           <ErrorBoundary>
             <Hero heroName="Joker" />
           </ErrorBoundary> */}
+          
+          {/* <ClickCounter name="Martha"/>
+          <HoverCounter />
+
+          <ClickCounterTwo />
+          <HoverCounterTwo />
+
+          <User render={ (isLoggedIn) => isLoggedIn ? "Martha" : "Guest"}/> */}
         </>
 
 
-          <ClickCounter name="Martha"/>
-          <HoverCounter />
+
+          <Counter render={ (count, incrementCount) => (
+            // <ClickCounter count={count} incrementCount={incrementCount} />
+            <ClickCounterTwo count={count} incrementCount={incrementCount} />
+          )}/>
+          <Counter render={ (count, incrementCount) => (
+            // <ClickCounter count={count} incrementCount={incrementCount} />
+            <HoverCounterTwo count={count} incrementCount={incrementCount} />
+          )}/>
       </div>
     );
   }
