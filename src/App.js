@@ -1,6 +1,8 @@
 import './App.css';
 import './public/css/appStyles.css'
 import { Component } from 'react';
+import PostForm from './Components/HTTP/PostForm';
+import PostList from './Components/HTTP/PostList';
 // import Greet from './Components/Greet.js'
 // import Welcome from './Components/Welcome.js'
 // import Message from './Components/Message.js'
@@ -22,14 +24,17 @@ import { Component } from 'react';
 // import PortalDemo from './Components/Portals/PortalDemo';
 // import Hero from './Components/Error-Boundary/Hero';
 // import ErrorBoundary from './Components/Error-Boundary/ErrorBoundary';
-import ClickCounter from './Components/Higher-Order-Components/ClickCounter';
-import HoverCounter from './Components/Higher-Order-Components/HoverCounter';
+// import ClickCounter from './Components/Higher-Order-Components/ClickCounter';
+// import HoverCounter from './Components/Higher-Order-Components/HoverCounter';
 // import ClickCounterTwo from './Components/Render-Props/ClickCounterTwo';
 // import HoverCounterTwo from './Components/Render-Props/HoverCounterTwo';
 // import User from './Components/Render-Props/User';
-import Counter from './Components/Render-Props/Counter';
-import HoverCounterTwo from './Components/Render-Props/HoverCounterTwo';
-import ClickCounterTwo from './Components/Render-Props/ClickCounterTwo';
+// import Counter from './Components/Render-Props/Counter';
+// import HoverCounterTwo from './Components/Render-Props/HoverCounterTwo';
+// import ClickCounterTwo from './Components/Render-Props/ClickCounterTwo';
+// import User from './Components/Render-Props/User';
+// import UserProvider from './Components/Context/userContext';
+// import ComponentC from './Components/Context/ComponentC';
 
 class App extends Component {
 
@@ -97,7 +102,7 @@ class App extends Component {
           <FRParentInput /> */}
 
           {/* <PortalDemo /> */}
-          
+          {/* ERROR BOUNDARY */}
           {/* <ErrorBoundary>
             <Hero heroName="Batman" />
           </ErrorBoundary>
@@ -108,6 +113,7 @@ class App extends Component {
             <Hero heroName="Joker" />
           </ErrorBoundary> */}
           
+          {/* RENDER PROPS */}
           {/* <ClickCounter name="Martha"/>
           <HoverCounter />
 
@@ -115,11 +121,7 @@ class App extends Component {
           <HoverCounterTwo />
 
           <User render={ (isLoggedIn) => isLoggedIn ? "Martha" : "Guest"}/> */}
-        </>
-
-
-
-          <Counter render={ (count, incrementCount) => (
+          {/* <Counter render={ (count, incrementCount) => (
             // <ClickCounter count={count} incrementCount={incrementCount} />
             <ClickCounterTwo count={count} incrementCount={incrementCount} />
           )}/>
@@ -127,6 +129,17 @@ class App extends Component {
             // <ClickCounter count={count} incrementCount={incrementCount} />
             <HoverCounterTwo count={count} incrementCount={incrementCount} />
           )}/>
+
+          <User render={ (isLoggedIn) => isLoggedIn? "Martha":"Guest"} /> */}
+          {/* CONTEXT */}
+          {/* <UserProvider value="Martha">
+            <ComponentC />
+          </UserProvider> */}
+        </>
+
+          {/* <PostList /> */}
+          <PostForm />
+
       </div>
     );
   }

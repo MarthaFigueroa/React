@@ -19,7 +19,7 @@ export class ClickCounterTwo extends Component {
         const { count, incrementCount } = this.props;
         return (
             <div>
-                <button onClick={this.incrementCount}> Clicked {count} times</button>
+                <button onClick={incrementCount}> Clicked {count} times</button>
             </div>
         )
     }
