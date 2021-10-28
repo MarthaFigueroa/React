@@ -1,8 +1,11 @@
 import './App.css';
 import './public/css/appStyles.css'
 import { Component } from 'react';
-import PostForm from './Components/HTTP/PostForm';
-import PostList from './Components/HTTP/PostList';
+// import PostForm from './Components/HTTP/PostForm';
+// import PostList from './Components/HTTP/PostList';
+import ClassCounter from './Components/State-Hook/ClassCounter';
+import HookCounter from './Components/State-Hook/HookCounter';
+import HookCounterTwo from './Components/State-Hook/HookCounterTwo';
 // import Greet from './Components/Greet.js'
 // import Welcome from './Components/Welcome.js'
 // import Message from './Components/Message.js'
@@ -137,8 +140,14 @@ class App extends Component {
           </UserProvider> */}
         </>
 
-          {/* <PostList /> */}
-          <PostForm />
+          {/* HTTP */}
+          {/* <PostList />
+          <PostForm /> */}
+
+          {/* HOOKS */}
+          <ClassCounter />
+          <HookCounter />
+          <HookCounterTwo />
 
       </div>
     );
