@@ -13,6 +13,11 @@ function HookMouse() {
     useEffect(() => {
         console.log("useEffect called");
         window.addEventListener('mousemove', logMousePosition);
+        
+        return () =>{
+            console.log("Component Unmounting");
+            window.removeEventListener('mousemove', logMousePosition);
+        }
     }, []) //useEffect is called once, just when it render with an empty array, with no dependencies
 
     return (
