@@ -19,7 +19,7 @@ class IntervalClassCounter extends Component {
 
     tick = () => {
         this.setState({
-            count: this.setState.count +1
+            count: this.state.count + 1
         })
     }
     

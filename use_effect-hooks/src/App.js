@@ -1,9 +1,12 @@
 import './App.css';
+// import IntervalHookCounter from './Components/IntervalHookCounter';
+// import IntervalClassCounter from './Components/IntervalClassCounter';
 // import ClassCounterOne from './Components/ClassCounterOne';
 // import HookCounterOne from './Components/HookCounterOne';
 // import ClassMouse from './Components/ClassMouse';
 // import HookMouse from './Components/HookMouse';
-import MouseContainer from './Components/MouseContainer';
+// import MouseContainer from './Components/MouseContainer';
+import DataFetching from './Components/DataFetching';
 
 function App() {
   return (
@@ -14,7 +17,14 @@ function App() {
       {/* Run Effects only once */}
       {/* <ClassMouse /> */}
       {/* <HookMouse /> */}
-      <MouseContainer /> 
+      {/* <MouseContainer />  */}
+
+      {/* <IntervalClassCounter />
+      <IntervalHookCounter /> */}
+
+      <DataFetching />
+
+
     </div>
   );
 }
